@@ -40,7 +40,7 @@
   <Actions Context="Author">
     <Exec>
       <Command>powershell</Command>
-      <Arguments>-c "powershell -c .\PlexRemoveOldMovies.ps1 2&gt;&amp;1 &gt;&gt; .\PlexRemoveOldMovies.log"</Arguments>
+      <Arguments>-ExecutionPolicy ByPass -c "powershell -c .\PlexRemoveOldMovies.ps1 &gt;&gt; .\PlexRemoveOldMovies.log  2&gt;&amp;1"</Arguments>
       <WorkingDirectory>C:\Program Files (x86)\Plex</WorkingDirectory>
     </Exec>
   </Actions>
